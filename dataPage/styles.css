@@ -1,0 +1,55 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    background-image: url(/firstPage/IMAGE/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 30px;
+    
+  }
+
+  img
+{
+  height: 10px;
+}
+
+hr{
+   
+   border: 2px !important;
+   border-style: dashed !important;
+   width: 50% !important;
+   margin-left: 25% !important;
+}
+
+.top{
+    margin-top: 15% !important;
+}
+.bottom{
+    margin-top: 17% !important;
+}
+
+.cust-nav
+{
+  height: 70px;
+  padding-left: 100px !important;
+
+}
+
+.Left {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    margin: auto;
+    
+  }
+  .Right {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }

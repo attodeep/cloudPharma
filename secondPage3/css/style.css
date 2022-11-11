@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  background-image: url(/secondPage/images/bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label, h6{
+    font-size: larger !important;
+}
+.cust-nav {
+  height: 75px;
+  padding-left: 100px !important;
+}
+
+.signUp-box {
+    padding: 10px;
+  position: fixed;
+  width: 800px;
+  height: 400px;
+  top: 45%;
+  left: 43%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px;
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.678); /* Black w/opacity/see-through */
+}
+
+
+
+.cust-gen
+{
+    margin-left: 50px;
+}
+.cust-submit
+{
+    text-align: center;
+}

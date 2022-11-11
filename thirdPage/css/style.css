@@ -1,0 +1,25 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  background-image: url(/secondPage/images/bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cust-nav {
+  height: 75px;
+  padding-left: 100px !important;
+}
+
+#Content {
+  height: 500px;
+  width: 1330px;
+  margin-left: 100px;
+  margin-top: 20px;
+  background-color: white;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(35, 35, 35, 0.4); /* Black w/opacity/see-through */
+  color: #ffff;
+  font-weight: bolder;
+  font-size: larger;
+}

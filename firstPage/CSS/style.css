@@ -1,0 +1,90 @@
+/*----------------------------- Tags -----------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  background-image: url(/firstPage/IMAGE/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin: 30px;
+  
+}
+img
+{
+  height: 10px;
+}
+* {
+    box-sizing: border-box;
+  }
+
+/*----------------------------- Classes -----------------------------*/
+/* Main Menu */
+/*--------------- Title ---------------*/
+.cust-nav
+{
+  height: 70px;
+  padding-left: 100px !important;
+
+}
+.title {
+  margin: 110px auto 40px;
+  width: 50%;
+  border-bottom: 5px solid #279253;
+  padding: 10px;
+  color: #F7F7F7;
+  position: absolute;
+  left: 26%;
+}
+.menu {
+  border-width: 600px;
+  margin: 15px auto 0;
+  background-color: #65C18C;
+  border-radius: 7%;
+}
+
+div.menu{
+  width: 400px;
+  height: 100px;
+  padding-top: 25px;
+}
+
+/*--------------- Container ---------------*/
+.container {
+  height: 325px;
+  border: 1px;
+  border-style: solid;
+  background-color: #F7F7F7;
+  border-radius: 5%;
+  border-color: black;
+  
+}
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+  }
+.Left {
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  margin: auto;
+  
+}
+.Right {
+  position: absolute;
+  top: 60px;
+  right: 350px;
+}
+

@@ -1,0 +1,109 @@
+<head>
+  <link rel="stylesheet" href="/fifthpage/style.css">
+  <link rel="stylesheet" href="/history/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">      
+    
+  <section id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light cust-nav">
+        <a class="navbar-brand" href="/firstPage/HTML/index.html">CloudPharma</a>
+
+</section>
+  <link rel="stylesheet" href="/fifthpage/style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+    
+  
+      function drawChart() {
+
+// Create the data table.
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'MONTH');
+data.addColumn('number', 'Profit');
+data.addRows([
+  ['Jan', 3],
+  ['feb', 1],
+  ['march', 1],
+  ['April', 1],
+  ['May',2]
+]);
+
+// Set chart options
+var options = {'title':'Profit month wise',
+               'width':600,
+               'height':400};
+
+// Instantiate and draw our chart, passing in some options.
+var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+}
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ["Element", "Density", { role: "style" } ],
+            ["Paracetamol", 8.94, "red"],
+            ["Citrizen 50", 10.49, "silver"],
+            ["Digine", 19.30, "gold"],
+            ["Azee 500", 38.45, "blue"]
+          ]);
+    
+          var view = new google.visualization.DataView(data);
+          view.setColumns([0, 1,
+                           { calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation" },
+                           2]);
+    
+          var options = {
+            title: "SALES OF THIS MONTH",
+            width: 600,
+            height: 400,
+            bar: {groupWidth: "95%"},
+            legend: { position: "none" },
+          };
+          var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+          chart.draw(view, options);
+      }
+      </script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['DAYS', 'Sales', 'Expenses'],
+            ['MON',  1000,      400],
+            ['TUE',  1170,      460],
+            ['WED',  660,       1120],
+            ['THU',  1030,      540],
+            ['FRI',  1099,      477],
+            ['SAT',  455,      543],
+            ['SUN',  4556,      2999]
+          ]);
+  
+          var options = {
+            title: 'Store Day wise  Performance',
+            
+            width: 600,
+            height: 400,
+            hAxis: {title: 'Week',  titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0}
+          };
+  
+          var chart = new google.visualization.AreaChart(document.getElementById('chart_div1'));
+          chart.draw(data, options);
+        }
+      </script>
+    
+    <!-- Identify where the chart should be drawn. -->
+    <div id="chart_div" style="width: 750px; height:600px;"></div>
+    <div id="chart_div1" style="width: 750px; height: 500px;"></div>
+    <div id="barchart_values" style="width: 750px; height: 500px;"></div>
+  </body>
